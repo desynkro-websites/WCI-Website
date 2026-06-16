@@ -1,0 +1,59 @@
+![WCI Digging & Excavation](images/thumbnail.jpg)
+
+# WCI Digging & Excavation
+
+A clean, modern website for a Perth-based excavation and earthmoving business. Built with plain HTML, CSS, and JavaScript -- no frameworks, no build tools, no bloated dependencies.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+## About
+
+This is the real website powering [wci-dig.com](https://wci-dig.com) -- a family-owned excavation team serving the Perth metro area since 2012. It was built to be fast, accessible, and easy to maintain.
+
+## Features
+
+- Responsive design (desktop + mobile)
+- Smooth scroll navigation
+- Services carousel
+- Testimonial carousel with autoplay and navigation
+- Photo gallery with lightbox viewer
+- FAQ accordion with ARIA accessibility
+- SEO metadata (structured data, Open Graph)
+- Keyboard and screen-reader friendly
+- Zero dependencies -- just HTML, CSS, and JavaScript
+- Docker support for easy deployment
+
+## Quick Start
+
+```bash
+docker compose up -d
+```
+
+Then visit `http://localhost:8080`.
+
+No Docker? Just open `index.html` in your browser.
+
+## Tech Stack
+
+| What | How |
+|------|-----|
+| Structure | HTML5 with semantic landmarks |
+| Styling | CSS3 (custom properties, flexbox, grid, animations) |
+| Logic | Vanilla JavaScript (no libraries) |
+| Icons | Inline SVG |
+| Font | Inter (Google Fonts) |
+| Server | Nginx via Docker Compose |
+
+## Deployment
+
+The site runs in an Nginx Docker container. See [HOSTING.md](HOSTING.md) for the full hosting and operations guide.
+
+## Credits
+
+- Built for [WCI Digging & Excavation](https://wci-dig.com)
+- Designed and developed by [DeSynkro](https://desynkro.com)
+- Assisted by [Opencode](https://opencode.ai)
+
+## License
+
+[MIT](LICENSE) -- feel free to use, modify, and share the code. Client branding and photography remain the property of WCI Digging & Excavation.

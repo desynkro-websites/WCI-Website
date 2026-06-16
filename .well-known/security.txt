@@ -1,0 +1,4 @@
+Contact: mailto:websec@desynkro.com
+Expires: 2027-05-26T16:45:00.000Z
+Preferred-Languages: en
+Canonical: https://wci-dig.com/.well-known/security.txt
