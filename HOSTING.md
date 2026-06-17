@@ -11,7 +11,7 @@ WCI-Website/
 ├── .gitignore
 ├── LICENSE
 ├── README.md               # Codeberg project page
-├── HOSTING.md               # This file (your hosting reference)
+├── HOSTING.md              # This file (your hosting reference)
 ├── images/
 │   ├── WCI Logo Side.webp
 │   ├── WCI Logo.webp

@@ -1,10 +1,46 @@
-![WCI Digging & Excavation](images/thumbnail.jpg)
-
 # WCI Digging & Excavation
 
 A clean, modern website for a Perth-based excavation and earthmoving business. Built with plain HTML, CSS, and JavaScript -- no frameworks, no build tools, no bloated dependencies.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+Built for [WCI Digging & Excavation](https://wci-dig.com), designed and developed by [DeSynkro](https://desynkro.com) with assistance from [Opencode](https://opencode.ai).
+
+## Quick start
+
+```bash
+docker compose up -d
+```
+
+Open http://localhost:8080
+
+No Docker? Just open `index.html` in your browser.
+
+## Screenshots
+
+![WCI Digging & Excavation](images/thumbnail.jpg)
+
+## Structure
+
+```
+├── index.html              Main website
+├── docker-compose.yml      Nginx setup
+├── css/
+│   └── style.css           All styles
+├── js/
+│   └── main.js             All logic
+├── images/
+│   ├── WCI Logo Side.webp
+│   ├── WCI Logo.webp
+│   ├── aboutus.jpg
+│   ├── embed.jpg
+│   ├── favicon.png
+│   ├── thumbnail.jpg
+│   └── jobs/               Gallery photos (10)
+├── HOSTING.md              Hosting & ops guide
+├── LICENSE                 MIT
+└── README.md               This file
+```
 
 ## About
 
@@ -23,16 +59,6 @@ This is the real website powering [wci-dig.com](https://wci-dig.com) -- a family
 - Zero dependencies -- just HTML, CSS, and JavaScript
 - Docker support for easy deployment
 
-## Quick Start
-
-```bash
-docker compose up -d
-```
-
-Then visit `http://localhost:8080`.
-
-No Docker? Just open `index.html` in your browser.
-
 ## Tech Stack
 
 | What | How |
@@ -48,12 +74,12 @@ No Docker? Just open `index.html` in your browser.
 
 The site runs in an Nginx Docker container. See [HOSTING.md](HOSTING.md) for the full hosting and operations guide.
 
+## License
+
+MIT -- see [LICENSE](LICENSE).
+
 ## Credits
 
 - Built for [WCI Digging & Excavation](https://wci-dig.com)
 - Designed and developed by [DeSynkro](https://desynkro.com)
 - Assisted by [Opencode](https://opencode.ai)
-
-## License
-
-[MIT](LICENSE) -- feel free to use, modify, and share the code. Client branding and photography remain the property of WCI Digging & Excavation.
