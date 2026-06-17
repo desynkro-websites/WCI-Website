@@ -274,7 +274,10 @@ function initGallery() {
 
   const items = galleryGrid.querySelectorAll('.gallery-item');
 
-  if (window.innerWidth < 768 && items.length > 3) {
+  if (window.innerWidth < 768 && items.length > 2) {
+    const visible = window.innerWidth < 480 ? 3 : 4;
+    if (items.length <= visible) return;
+
     const moreBtn = document.createElement('button');
     moreBtn.className = 'gallery-more-btn';
     moreBtn.textContent = 'View all photos';
@@ -282,7 +285,7 @@ function initGallery() {
     const moreWrap = document.createElement('div');
     moreWrap.className = 'gallery-more-items';
 
-    for (let i = 3; i < items.length; i++) {
+    for (let i = visible; i < items.length; i++) {
       moreWrap.appendChild(items[i]);
     }
 
@@ -301,17 +304,23 @@ initGallery();
 
 /* DEBOUNCED RESIZE HANDLER */
 let resizeTimer;
+let lastWidth = window.innerWidth;
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(() => {
+    const widthChanged = window.innerWidth !== lastWidth;
+    lastWidth = window.innerWidth;
+
     if (carouselGrid && cards?.length) {
       const prevIndex = carouselCurrent;
       buildCarousel();
       goTo(Math.min(prevIndex, Math.ceil(cards.length / getCardsPerView()) - 1));
       startAutoplay();
     }
-    initServicesCarousel();
-    initGallery();
+    if (widthChanged) {
+      initServicesCarousel();
+      initGallery();
+    }
   }, 150);
 });
 
