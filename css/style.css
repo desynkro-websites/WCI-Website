@@ -150,7 +150,7 @@ section { padding: 64px 0; }
 .section-visible .service-card:nth-child(4) { animation: slide-up 0.5s ease 0.24s both; }
 .section-visible .service-card:nth-child(5) { animation: slide-up 0.5s ease 0.32s both; }
 .section-visible .service-card:nth-child(6) { animation: slide-up 0.5s ease 0.4s both; }
-/* Override for mobile carousel — cards set by JS */
+/* Override for mobile carousel - cards set by JS */
 .service-card.visible { opacity: 1 !important; transform: translateY(0) !important; }
 .section-header { text-align: center; margin-bottom: 40px; }
 .section-label {

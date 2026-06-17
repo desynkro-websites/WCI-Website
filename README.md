@@ -1,6 +1,6 @@
 # WCI Digging & Excavation
 
-A clean, modern website for a Perth-based excavation and earthmoving business. Built with plain HTML, CSS, and JavaScript -- no frameworks, no build tools, no bloated dependencies.
+A clean, modern website for a Perth-based excavation and earthmoving business. Built with plain HTML, CSS, and JavaScript. No frameworks, no build tools, no bloated dependencies.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -25,6 +25,8 @@ No Docker? Just open `index.html` in your browser.
 ```
 ├── index.html              Main website
 ├── docker-compose.yml      Nginx setup
+├── .gitignore              Git rules
+├── CHANGELOG.md            Version history
 ├── css/
 │   └── style.css           All styles
 ├── js/
@@ -37,6 +39,8 @@ No Docker? Just open `index.html` in your browser.
 │   ├── favicon.png
 │   ├── thumbnail.jpg
 │   └── jobs/               Gallery photos (10)
+├── .well-known/
+│   └── security.txt        Security contact
 ├── HOSTING.md              Hosting & ops guide
 ├── LICENSE                 MIT
 └── README.md               This file
@@ -44,7 +48,7 @@ No Docker? Just open `index.html` in your browser.
 
 ## About
 
-This is the real website powering [wci-dig.com](https://wci-dig.com) -- a family-owned excavation team serving the Perth metro area since 2012. It was built to be fast, accessible, and easy to maintain.
+This is the real website powering [wci-dig.com](https://wci-dig.com), a family-owned excavation team serving the Perth metro area since 2012. It was built to be fast, accessible, and easy to maintain.
 
 ## Features
 
@@ -56,7 +60,7 @@ This is the real website powering [wci-dig.com](https://wci-dig.com) -- a family
 - FAQ accordion with ARIA accessibility
 - SEO metadata (structured data, Open Graph)
 - Keyboard and screen-reader friendly
-- Zero dependencies -- just HTML, CSS, and JavaScript
+- Zero dependencies: just HTML, CSS, and JavaScript
 - Docker support for easy deployment
 
 ## Tech Stack
@@ -76,7 +80,7 @@ The site runs in an Nginx Docker container. See [HOSTING.md](HOSTING.md) for the
 
 ## License
 
-MIT -- see [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).
 
 ## Credits
 

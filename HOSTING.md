@@ -1,4 +1,4 @@
-# WCI Digging & Excavation -- Hosting Guide
+# WCI Digging & Excavation - Hosting Guide
 
 Everything you need to keep this site running, all in one place.
 
@@ -76,7 +76,7 @@ Edit `index.html` or swap images in `images/`, then:
 docker compose up -d --build
 ```
 
-Changes appear instantly -- no need to restart anything else.
+Changes appear instantly, no need to restart anything else.
 
 ---
 
@@ -164,9 +164,9 @@ sudo systemctl enable cloudflared
 
 ## Verify Everything Is Live
 
-1. **Docker**: `curl http://localhost:8080` -- should return HTML
-2. **Tunnel**: `sudo systemctl status cloudflared` -- should show active
-3. **DNS**: Cloudflare dashboard > DNS > Records -- both records should have the orange cloud (proxy) icon
+1. **Docker**: `curl http://localhost:8080` should return HTML
+2. **Tunnel**: `sudo systemctl status cloudflared` should show active
+3. **DNS**: Cloudflare dashboard > DNS > Records; both records should have the orange cloud (proxy) icon
 4. **Browser**: Visit `https://wci-dig.com`
 
 DNS may take 1-2 minutes to propagate.
